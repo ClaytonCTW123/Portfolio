@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clayton Waite | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      transition: background 0.5s ease;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #00264d;
+      animation: slideDown 0.8s ease-in-out;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #003366;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+    .projects a, #contact a {
+      color: #004080;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      animation: fadeIn 1s ease-out;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #00264d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Clayton Waite</h1>
+    <p>Aspiring Developer | JavaScript | GitHub | Software Programmer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an Information Technology student, I am passionate about building modern, user friendly web applications. I thrive in collaborative environments and love tackling real world problems through code with programming. Technology has always been my passion and it facinated me so I strive to do my best in this field. I am relaxed and can handle pressure well, I always do my best to help the group when I can.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><strong>Education:</strong> BSc in Information Technology, North West University (2022–2025)</p>
+    <p><strong>Certifications:</strong> Responsive Web Design – freeCodeCamp</p>
+    <a class="download-btn" href="Clayton_Waite_41070402_CV.pdf" download>Download CV</a>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+      <li>Projects Repo in GitHub: <a href="https://github.com/ClaytonCTW123/Projects" target="_blank">https://github.com/ClaytonCTW123/Projects</a></li>
+      <li>Virtual VC Repo in GitHub: <a href="https://github.com/ClaytonCTW123/Projects" target="_blank">https://github.com/ClaytonCTW123/Projects</a></li>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Git, GitHub, REST APIs</li>
+      <li>Problem-Solving, Team Collaboration</li>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: waiteclayton05@gmail.com</p>
+    <p>LinkedIn: <a href="http://www.linkedin.com/in/clayton-waite-255300336" target="_blank">http://www.linkedin.com/in/clayton-waite-255300336</a></p>
+    <p>GitHub: <a href="https://github.com/ClaytonCTW123" target="_blank">https://github.com/ClaytonCTW123</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Clayton Waite | All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
